@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iti Malia | PetShop</title>
+    <link rel="stylesheet" href="stryle/style.css">
+    <link rel="stylesheet" href="stryle/popup.css">
+    <link rel="stylesheet" href="stryle/responsive.css">
+    <link rel="stylesheet" href="stryle/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="stryle/owl/owl.theme.default.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assents/logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="freteContainer">
+            <h4 class="frete">
+               Frete Grátis acima de R$49 - Cupom BLACKCAT
+            </h4>
+        </div>
+        <div class="logo">
+            <img class="logoImg" src="./assents/Sem título.png" alt="Logo Iti Malia" />
+            <div id='search-box'>
+                <form action='' id='search-form' method='' target='_top'>
+                    <input id='search-text' placeholder='Busque um produto' type='text'/>
+                    <button id='search-button' type='submit'><span>Buscar</span></button>
+                </form>
+            </div>
+            <div>
+                <img class="login" src="./assents/istockphoto-1249783457-1024x1024.PNG" alt="Carrinho" />
+                <a onclick="scrollFunction('1')">
+                    <img class="login" src="./assents/login.PNG" alt="Login" />
+                </a>
+            </div>
+        </div> 
+        
+        <div class="itensMenu">
+            <a class="menuItem" href="#" >Início</a>
+            <a class="menuItem" onclick="scrollFunction('2')">Produtos</a>
+            <a class="menuItem" onclick="scrollFunction('4')">Nosso Clientes</a>
+            <a class="menuItem" onclick="scrollFunction('3')">Marcas</a>  
+        </div>        
+    </header>
+        <div class="containerBanner">
+            <img class="banner" src="./assents/banner-desktop3.jpg" alt="Banner">  
+        </div>
+        <section id="containerCadastro">
+            <div class="cadastro" id="cadastro">
+                <span class="tituloCadastro">Cadastre-se</span>
+                <span class="SubTitulo">Ganhe um <span id="cupom-subtitulo">CUPOM</span> e fique por dentro das novidades da Black Friday Iti Malia!</span>
+                <form id='formularioCadastro'>
+                    <input id='textNome' placeholder='Nome' type='text'/>
+                    <input id='textEmail' placeholder='E-mail' type='text'/>
+                    <div id="alertaEmail">Digite um nome e e-mail válidos</div>
+                    <button id='botaoCadastrar' type='button'><span>Cadastrar</span></button>
+                </form>               
+            </div>
+            <div class="cronometro">
+                <span class="tituloCronomentro">Já estamos contando os dias para próxima edição.</span>
+                <div class="contagem">
+                    <p id="dias"></p>
+                    <p id="horas"></p>
+                </div>
+                <div class="contagemTexto">
+                    <span id="contagemItens">dias</span>
+                    <span id="contagemItens">horas</span>
+                </div>
+                <div class="contagem">
+                    <p id="minutos"></p>
+                    <p id="segundos"></p>
+                </div>
+                <div class="contagemTexto">
+                    <span id="contagemItens">minutos</span>
+                    <span id="contagemItens">segundos</span>
+                </div>
+            </div>
+        </section>
+        <section class="containerCarousel">
+            <h1 id="anuncio">Confira um pouco do que vai estar em promoção:</h1>
+            <div class="carousel">
+                <div id="carousel1" class="owl-carousel owl-theme">
+                        <div class="item">                     
+                            <h3 class="titleCarousel">Higiene e Cuidados</h3>
+                            <h4 class="subtitleCarousel">Shampoo, areia e tapete higiênico, creme dental, pentes e escovas e muito mais.</h4>
+                            <img class="imgCarousel" src="assents/higiene.jpg" alt="Produtos de higiene para pets" srcset="">                   
+                            <a id="verOfertas" href="#">Ver Ofertas</a>
+                        </div>
+                        <div class="item">
+                            <h3 class="titleCarousel">Ração e Petiscos</h3>
+                            <h4 class="subtitleCarousel">Rações Secas, latas, saches, petiscos além de acessórios como comedouros e bebedouros.</h4>
+                            <img class="imgCarousel" src="assents/alimentos.jpg" alt="Alimentos para pets" srcset="">
+                            <a id="verOfertas" href="#">Ver Ofertas</a>
+                        </div>
+                        <div class="item">                                         
+                            <h3 class="titleCarousel">Brinquedos</h3>
+                            <h4 class="subtitleCarousel">Brinquedos interativos, pelúcias, bolinhas, arranhadores, tudo que seu pet precisa pra ser feliz!</h4>
+                            <img class="imgCarousel" src="assents/brinquedos.jpg" alt="Brinqueds para pets" srcset="">
+                            <a id="verOfertas" href="#">Ver Ofertas</a>
+                        </div>
+                        <div class="item">
+                            <h3 class="titleCarousel">Roupinhas</h3>
+                            <h4 class="subtitleCarousel">As mais variadas roupinhas para manter seu pet quentinho e estiloso!</h4>
+                            <img class="imgCarousel" src="assents/roupinhas.jpg" alt="Roupinhas para pets" srcset="">
+                            <a id="verOfertas" href="#">Ver Ofertas</a>
+                        </div>
+                        <div class="item">
+                            <h3 class="titleCarousel">Casinhas</h3>
+                            <h4 class="subtitleCarousel">Em diferentes materiais, modelos e tamanhos para agradar todos os pets!</h4>
+                            <img class="imgCarousel" src="assents/casinha.jpg" alt="Casinhas para pets" srcset="">
+                            <a id="verOfertas" href="#">Ver Ofertas</a>
+                        </div>
+                        <div class="item">
+                            <h3 class="titleCarousel">Medicamentos</h3>
+                            <h4 class="subtitleCarousel">Rações medicamentosas, suplementos e remédios para manter seu pet saudável.</h4>
+                            <img class="imgCarousel" src="assents/farmacia.jpg" alt="Medicamento para pets" srcset="">    
+                            <a id="verOfertas" href="#">Ver Ofertas</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="containerMarcas">
+            <div id="marcas">
+                <h1 id="anuncio">Algumas das marcas que estarão presentes na Black Friday:</h1>
+                <div class="logo-marca">
+                    <img class="logoMarca" src="assents/marca1.jpeg" alt="Logomarca" >                   
+                    <img class="logoMarca" src="assents/marca2.png" alt="Logomarca" >                   
+                    <img class="logoMarca" src="assents/marca3.jpeg" alt="Logomarca" >                   
+                    <img class="logoMarca" src="assents/marca4.jpeg" alt="Logomarca" >             
+                    <img class="logoMarca" src="assents/marca5.png" alt="Logomarca" >                   
+                    <img class="logoMarca" src="assents/marca6.png" alt="Logomarca" >                   
+                    <img class="logoMarca" src="assents/marca7.png" alt="Logomarca" >  
+                    <img class="logoMarca" src="assents/marca8.png" alt="Logomarca" >  
+                    <img class="logoMarca" src="assents/marca9.png" alt="Logomarca" >  
+                    <img class="logoMarca" src="assents/marca10.jpeg" alt="Logomarca" >  
+                    <img class="logoMarca" src="assents/marca11.png" alt="Logomarca" >  
+                    <img class="logoMarca" src="assents/marca12.png" alt="Logomarca" >  
+                </div>                  
+            </div>
+        </section>
+        <section class="containerClientes">
+            <h1 id="anuncio">Confira as avaliação dos nossos clientes:</h1>
+            <div class="carousel">
+                <div id="carousel2" class="owl-carousel owl-theme">
+                        <div class="item">   
+                            <div class="sub-cliente">                
+                                <h3 class="titleCarousel">Maria Augusta</h3>
+                                <h4 class="subtitleCarousel">Chegou antes do prazo de entrega e super bem embalado. Adorei!</h4>
+                            </div>  
+                            <img class="imgEstrelas" src="assents/estrelas.png" alt="" >
+                        </div>
+                        <div class="item">                     
+                            <div class="sub-cliente">  
+                                <h3 class="titleCarousel">Sandra Guimaraes</h3>
+                                <h4 class="subtitleCarousel">Melhor preço e prazo de entrega da região. Super indico!</h4>
+                            </div>  
+                            <img class="imgEstrelas" src="assents/estrelas.png" alt="" >
+                        </div>
+                        <div class="item">
+                            <div class="sub-cliente">                        
+                                <h3 class="titleCarousel">Alberto Lima</h3>
+                                <h4 class="subtitleCarousel">A caminha é super macia e resistente, superou minhas expectativas! A Lola amou!</h4>
+                            </div>  
+                            <img class="imgEstrelas" src="assents/estrelas.png" alt="" >
+                        </div>
+                        <div class="item"> 
+                            <div class="sub-cliente">                       
+                                <h3 class="titleCarousel">Jordano Lorenzo</h3>
+                                <h4 class="subtitleCarousel">Atendimento nota mil! Tive um probleminha mas logo me atenderam e resolveram na hora, vou comprar sempre!</h4>
+                            </div>  
+                            <img class="imgEstrelas" src="assents/estrelas.png" alt="" >
+                        </div> 
+                </div>
+            </div>
+        </section>
+        <div id="popup" class="popup">
+            <a id="close-popup" style="z-index: 5;"  href="javascript: fechar();">x</a>
+            <a id="title-popup">PEGUE SEU CUPOM</a>
+            <div id="cupom-popup">
+                <a id="off-popup">5% OFF</a>
+                <a id="codigo-popup">PETIM2021</a>       
+            </div>
+            <a id="subtitle-popup">Válido para a primeira compra</a>
+        </div>
+        <footer>Promoção válida somente para a loja online durante o evento ou enquando durarem os estoques.</footer>    
+   
+        <script type="text/javascript" src="script/script.js"></script>
+        <script src="script/owl/jquery.min.js"></script>
+        <script src="script/owl/owl.carousel.min.js"></script>
+        <script src="script/owl/setup.js"></script>      
+</body>
+</html>
